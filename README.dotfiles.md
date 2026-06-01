@@ -1,7 +1,7 @@
 # Dotfiles — twh's Development Environment
 
 Managed via bare Git repository at `~/dotfiles.git`.  
-18 tracked files | 6 commits | Last updated 2026-06-01
+21 tracked files | 8 commits | Last updated 2026-06-01
 
 ---
 
@@ -58,7 +58,16 @@ Complete ROS development workflow:
 **LSP servers**: clangd-18 (apt) for C++, pyright-langserver (pip) for Python.  
 **Format on save**: autopep8 (Python), clang-format Google style (C++), json.tool (JSON), xmllint (ROS .launch).  
 **Plugins** (in `~/.vim/pack/plugins/start/`): fzf.vim, nerdtree, vim-lsp, vim-polyglot, vim-ros, vim-snippets.  
-**Snippet engine**: snipMate from apt (`vim-snipmate`), snippets from `vim-snippets` plugin.
+**Snippet engine**: snipMate from apt (`vim-snipmate`), snippets from `vim-snippets` plugin.  
+**CSV**: `~/.vim/after/syntax/csv.vim` — dynamic per-column coloring (15-color Scarlet palette, auto-counts columns).
+
+### Vim after/syntax — `~/.vim/after/syntax/`
+
+| File | Purpose |
+|------|---------|
+| `csv.vim` | Multi-color CSV columns (dynamic count, Scarlet palette) |
+| `cpp.vim` | ROS C++ syntax keywords (ros::, tf2::, sensor_msgs, etc.) |
+| `python.vim` | ROS Python syntax keywords (rospy, tf2, actionlib, etc.) |
 
 ### tmux — `~/.tmux.conf.local`
 
@@ -72,7 +81,7 @@ Key settings:
 
 | File | Purpose |
 |------|---------|
-| `yazi.toml` | File opener — uses `yazi-vim-opener` (tmux-aware, sends files to existing Vim server) |
+| `yazi.toml` | Opener (vim via `yazi-vim-opener`), previewer rules (code preview for csv/tsv/txt/log/md) |
 | `keymap.toml` | Default keybindings, no custom overrides |
 | `theme.toml` | Scarlet color scheme synced with terminal/tmux/Vim |
 
@@ -256,6 +265,7 @@ git clone ~/dotfiles.git ~/dotfiles-restore
 
 # 2. Copy all dotfiles into place
 cp ~/dotfiles-restore/.vimrc ~/
+cp -r ~/dotfiles-restore/.vim/after/ ~/.vim/
 cp ~/dotfiles-restore/.tmux.conf.local ~/
 cp ~/dotfiles-restore/.zshrc ~/
 cp ~/dotfiles-restore/.bashrc ~/
@@ -290,6 +300,8 @@ mkdir -p ~/.vim/pack/plugins/start
 ## Commit History
 
 ```
+72f8ea6 feat: multi-color CSV syntax, Yazi text preview rules
+e25522c Update README stats and commit history
 48265e8 Remove yazi custom keybindings
 a8942b3 Add SSH config (GitHub via ssh.github.com:443)
 e0c5bb0 Comprehensive README: full restore guide, theme specs, keybindings, deps, gitignore
