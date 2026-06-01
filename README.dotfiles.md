@@ -1,7 +1,7 @@
 # Dotfiles — twh's Development Environment
 
 Managed via bare Git repository at `~/dotfiles.git`.  
-17 tracked files | 3 commits | Last updated 2026-06-01
+18 tracked files | 6 commits | Last updated 2026-06-01
 
 ---
 
@@ -290,6 +290,9 @@ mkdir -p ~/.vim/pack/plugins/start
 ## Commit History
 
 ```
+48265e8 Remove yazi custom keybindings
+a8942b3 Add SSH config (GitHub via ssh.github.com:443)
+e0c5bb0 Comprehensive README: full restore guide, theme specs, keybindings, deps, gitignore
 b119c4f Add README and system locale reference
 911bc4f Add Yazi Scarlet configs + dotfiles alias in shellrc
 75b4949 Initial dotfiles — Scarlet theme, ROS dev workflow, locale en_US
