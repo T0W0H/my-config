@@ -1,0 +1,16 @@
+# yazi 配置
+# 变更记录:
+#   2026-06-01  初版: opener 用 vim (tmux 内 remote, tmux 外直接开)
+
+[opener]
+edit = [
+  { run = "yazi-vim-opener %s", block = true, desc = "用 vim 打开", for = "unix" },
+]
+system_default = [
+  { run = "xdg-open %s1", desc = "系统默认", for = "linux" },
+]
+
+[open]
+rules = [
+  { url = "*", use = ["edit", "system_default"] },
+]

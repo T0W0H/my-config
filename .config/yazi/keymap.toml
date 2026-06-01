@@ -1,0 +1,19 @@
+# yazi 按键映射
+# 变更记录:
+#   2026-06-01  压缩/解压快捷键 (C=tar.gz, D=zip, E=解压)
+
+# ---- 管理器模式 --------------------------------------------------------------
+[[manager.prepend_keymap]]
+on   = ["C"]
+run  = "shell \"tar -czf 'archive.tar.gz' -- %s\" --confirm"
+desc = "压缩选中为 archive.tar.gz"
+
+[[manager.prepend_keymap]]
+on   = ["D"]
+run  = "shell \"zip -r 'archive.zip' -- %s\" --confirm"
+desc = "压缩选中为 archive.zip"
+
+[[manager.prepend_keymap]]
+on   = ["E"]
+run  = "shell \"7z x '$1' -o'${1%.*}'\" --confirm"
+desc = "解压到同名目录"

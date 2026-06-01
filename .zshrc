@@ -167,3 +167,6 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
+# dotfiles bare git repo alias
+alias dotfiles="git --git-dir=\$HOME/dotfiles.git --work-tree=\$HOME"

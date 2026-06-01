@@ -1,0 +1,111 @@
+# yazi 主题 —— Scarlet（暖色 · 红/洋红主导 · 高饱和 · 纯黑底 #000000）
+# 与 GNOME Terminal / tmux / Vim 全线统一
+# 变更记录:
+#   2026-06-01  Scarlet 主题 (由 One Dark → Gruvbox → Scarlet 最终方案)
+#               文件夹颜色改为蛋黄白 #ffecb3
+
+[app]
+overall = { bg = "#000000" }
+
+[mgr]
+cwd            = { fg = "#ff4081", bold = true }
+border_symbol  = "│"
+border_style   = { fg = "#263238" }
+syntect_theme  = "base16-ocean.dark"
+
+[indicator]
+parent  = { fg = "#263238", bg = "#000000" }
+current = { fg = "#263238", bg = "#000000" }
+preview = { fg = "#263238", bg = "#000000" }
+
+[tabs]
+active   = { fg = "#cfd8dc", bg = "#000000", bold = true }
+inactive = { fg = "#546e7a", bg = "#000000" }
+
+[mode]
+normal_main = { fg = "#000000", bg = "#ff4081", bold = true }
+normal_alt  = { fg = "#ff4081", bg = "#263238" }
+select_main = { fg = "#000000", bg = "#69f0ae", bold = true }
+select_alt  = { fg = "#69f0ae", bg = "#263238" }
+unset_main  = { fg = "#000000", bg = "#ffab40", bold = true }
+unset_alt   = { fg = "#ffab40", bg = "#263238" }
+
+[status]
+overall         = { fg = "#78909c", bg = "#000000" }
+sep_left        = { open = "", close = "]" }
+sep_right       = { open = "[", close = "" }
+perm_type       = { fg = "#40c4ff" }
+perm_read       = { fg = "#69f0ae" }
+perm_write      = { fg = "#ffab40" }
+perm_exec       = { fg = "#ff5252" }
+perm_sep        = { fg = "#263238" }
+progress_label  = { fg = "#cfd8dc", bold = true }
+progress_normal = { fg = "#000000", bg = "#ff4081" }
+progress_error  = { fg = "#000000", bg = "#ff5252" }
+
+[which]
+mask      = { bg = "#263238" }
+cand      = { fg = "#69f0ae", bg = "#263238" }
+rest      = { fg = "#546e7a", bg = "#263238" }
+desc      = { fg = "#ff4081" }
+separator = "  "
+
+[confirm]
+border   = { fg = "#ff4081" }
+title    = { fg = "#000000", bg = "#ff4081", bold = true }
+body     = { fg = "#cfd8dc", bg = "#000000" }
+list     = { fg = "#546e7a" }
+btn_yes  = { fg = "#000000", bg = "#69f0ae", bold = true }
+btn_no   = { fg = "#000000", bg = "#ff5252", bold = true }
+
+[spot]
+border   = { fg = "#ff4081" }
+title    = { fg = "#000000", bg = "#ff4081", bold = true }
+tbl_col  = { fg = "#cfd8dc", bg = "#263238" }
+tbl_cell = { fg = "#cfd8dc", bg = "#000000" }
+
+[notify]
+title_info  = { fg = "#000000", bg = "#40c4ff", bold = true }
+title_warn  = { fg = "#000000", bg = "#ffab40", bold = true }
+title_error = { fg = "#000000", bg = "#ff5252", bold = true }
+
+[pick]
+border   = { fg = "#ff4081" }
+active   = { fg = "#69f0ae", bold = true }
+inactive = { fg = "#546e7a" }
+
+[input]
+border   = { fg = "#ff4081" }
+title    = { fg = "#cfd8dc", bg = "#ff4081" }
+value    = { fg = "#cfd8dc" }
+selected = { fg = "#000000", bg = "#ff4081" }
+
+[cmp]
+border   = { fg = "#ff4081" }
+active   = { fg = "#69f0ae", bg = "#263238", bold = true }
+inactive = { fg = "#cfd8dc", bg = "#000000" }
+
+[tasks]
+border  = { fg = "#ff4081" }
+title   = { fg = "#cfd8dc", bg = "#ff4081", bold = true }
+hovered = { fg = "#cfd8dc", bg = "#263238", bold = true }
+
+[help]
+on      = { fg = "#ff4081", bold = true }
+run     = { fg = "#69f0ae" }
+desc    = { fg = "#546e7a" }
+hovered = { bg = "#263238" }
+footer  = { fg = "#546e7a", bg = "#000000" }
+
+[filetype]
+rules = [
+	{ mime = "image/*", fg = "#ffab40" },
+	{ mime = "video/*", fg = "#ff4081" },
+	{ mime = "audio/*", fg = "#69f0ae" },
+	{ mime = "text/*", fg = "#cfd8dc" },
+	{ mime = "application/zip", fg = "#ff4081" },
+	{ mime = "application/gzip", fg = "#ff4081" },
+	{ mime = "application/x-*", fg = "#40c4ff" },
+	{ url = "*/", fg = "#ffecb3", bold = true },
+	{ url = "*", fg = "#cfd8dc" },
+]

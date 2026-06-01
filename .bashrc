@@ -193,3 +193,6 @@ bz() {
 
 # 动态更新终端标题为用户@主机: 当前目录
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
+
+# dotfiles bare git repo alias
+alias dotfiles="git --git-dir=\$HOME/dotfiles.git --work-tree=\$HOME"
