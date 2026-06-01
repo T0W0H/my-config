@@ -1,0 +1,7 @@
+[safe]
+	directory = *
+[user]
+	name = 文昊 唐
+	email = tangwenhao@unity-drive.com
+[credential]
+	helper = cache

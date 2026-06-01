@@ -1,0 +1,9 @@
+#!/bin/bash
+# yazi → vim opener
+if [ -n "$TMUX" ]; then
+    # tmux 内：发到已存在的 vim server，不弹新窗口
+    exec vim --servername VIM --remote-silent "$@"
+else
+    # tmux 外：当前终端直接开 vim
+    exec vim "$@"
+fi

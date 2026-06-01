@@ -1,0 +1,60 @@
+# 敏感信息 / 密钥
+*.key
+*.pem
+*secret*
+*API_KEY*
+
+# Vim
+.viminfo
+.netrwhist
+*.swp
+*.un~
+
+# Shell 历史
+.bash_history
+.zsh_history
+.python_history
+
+# 缓存
+.cache/
+*.zwc
+.zcompdump*
+
+# 临时文件
+*~
+*.bak
+.DS_Store
+
+# 二进制 / 构建产物
+*.o
+*.a
+*.so
+node_modules/
+
+# SSH 密钥
+.ssh/
+
+# GPG
+.gnupg/
+
+# ROS 日志
+.ros/log/
+
+# 应用数据 (大量二进制)
+.config/google-chrome/
+.config/DingTalk/
+.config/VSCodium/
+.config/Electron/
+.mozilla/
+.xwechat/
+.npm/
+.nvm/
+.opencode/
+
+# Trash
+.local/share/Trash/
+
+# Gazebo/ignition 日志
+.gazebo/
+.ignition/
+.sdformat/
