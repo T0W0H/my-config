@@ -73,7 +73,7 @@ Key settings:
 | File | Purpose |
 |------|---------|
 | `yazi.toml` | File opener — uses `yazi-vim-opener` (tmux-aware, sends files to existing Vim server) |
-| `keymap.toml` | `C` → compress tar.gz, `D` → compress zip, `E` → extract |
+| `keymap.toml` | Default keybindings, no custom overrides |
 | `theme.toml` | Scarlet color scheme synced with terminal/tmux/Vim |
 
 ### Shell — `~/.zshrc`, `~/.bashrc`
