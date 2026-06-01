@@ -10,6 +10,15 @@ system_default = [
   { run = "xdg-open %s1", desc = "系统默认", for = "linux" },
 ]
 
+[plugin]
+prepend_previewers = [
+  { url = "*.csv",  run = "code" },
+  { url = "*.tsv",  run = "code" },
+  { url = "*.txt",  run = "code" },
+  { url = "*.log",  run = "code" },
+  { url = "*.md",   run = "code" },
+]
+
 [open]
 rules = [
   { url = "*", use = ["edit", "system_default"] },

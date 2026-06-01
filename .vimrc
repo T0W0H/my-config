@@ -75,6 +75,11 @@ let g:csv_delim = ','
 let g:csv_default_delim = ','
 let g:csv_no_conceal = 1
 
+augroup vim_fix_undo_ftplugin
+  autocmd!
+  autocmd BufReadPre * unlet! b:undo_ftplugin
+augroup END
+
 " ---- fzf --------------------------------------------------------------------
 nnoremap <silent> <Leader>f :Files<CR>
 nnoremap <silent> <Leader>g :Rg<CR>
