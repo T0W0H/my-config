@@ -72,6 +72,7 @@ syntax on
 
 " ---- CSV (rainbow_csv) -------------------------------------------------------
 let g:polyglot_disabled = ['csv']
+let g:rcsv_max_columns = 100
 
 augroup vim_fix_undo_ftplugin
   autocmd!
