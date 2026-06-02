@@ -70,10 +70,8 @@ let g:python_highlight_space_errors = 0
 filetype plugin indent on
 syntax on
 
-" ---- CSV --------------------------------------------------------------------
-let g:csv_delim = ','
-let g:csv_default_delim = ','
-let g:csv_no_conceal = 1
+" ---- CSV (rainbow_csv) -------------------------------------------------------
+let g:polyglot_disabled = ['csv']
 
 augroup vim_fix_undo_ftplugin
   autocmd!

@@ -59,13 +59,12 @@ Complete ROS development workflow:
 **Format on save**: autopep8 (Python), clang-format Google style (C++), json.tool (JSON), xmllint (ROS .launch).  
 **Plugins** (in `~/.vim/pack/plugins/start/`): fzf.vim, nerdtree, vim-lsp, vim-polyglot, vim-ros, vim-snippets.  
 **Snippet engine**: snipMate from apt (`vim-snipmate`), snippets from `vim-snippets` plugin.  
-**CSV**: `~/.vim/after/syntax/csv.vim` — dynamic per-column coloring (15-color Scarlet palette, auto-counts columns).
+**CSV**: `rainbow_csv` plugin — multi-color column highlighting (10 colors cycling).
 
 ### Vim after/syntax — `~/.vim/after/syntax/`
 
 | File | Purpose |
 |------|---------|
-| `csv.vim` | Multi-color CSV columns (dynamic count, Scarlet palette) |
 | `cpp.vim` | ROS C++ syntax keywords (ros::, tf2::, sensor_msgs, etc.) |
 | `python.vim` | ROS Python syntax keywords (rospy, tf2, actionlib, etc.) |
 
