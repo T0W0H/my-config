@@ -89,24 +89,24 @@ tmux_conf_24b_colour=true
 #   - tmux_conf_theme_synchronized
 tmux_conf_theme=enabled
 
-# Scarlet 主题色（暖色 · 红/洋红主导 · 高饱和 · 纯黑底 #000000）
-tmux_conf_theme_colour_1="#000000"    # black (status bar bg)
-tmux_conf_theme_colour_2="#263238"    # dark blue-gray (pane border/selection)
-tmux_conf_theme_colour_3="#78909c"    # blue-gray (dim text)
+# Burgundy 主题色（暖色 · 红/洋红主导 · 高饱和 · 酒红底 #380C2A）
+tmux_conf_theme_colour_1="#380C2A"    # burgundy (status bar bg)
+tmux_conf_theme_colour_2="#2D0822"    # deep burgundy (pane border/selection)
+tmux_conf_theme_colour_3="#9E7D8E"    # muted mauve (dim text)
 tmux_conf_theme_colour_4="#ff4081"    # hot pink (active!)
 tmux_conf_theme_colour_5="#ffab40"    # amber (mode/message)
-tmux_conf_theme_colour_6="#000000"    # black
-tmux_conf_theme_colour_7="#cfd8dc"    # light gray (text)
-tmux_conf_theme_colour_8="#000000"    # black
+tmux_conf_theme_colour_6="#380C2A"    # burgundy
+tmux_conf_theme_colour_7="#E8D5E0"    # pale pink (text)
+tmux_conf_theme_colour_8="#380C2A"    # burgundy
 tmux_conf_theme_colour_9="#ffab40"    # amber
 tmux_conf_theme_colour_10="#ff4081"   # hot pink (magenta accent)
 tmux_conf_theme_colour_11="#69f0ae"   # mint green
-tmux_conf_theme_colour_12="#78909c"   # blue-gray
-tmux_conf_theme_colour_13="#cfd8dc"   # light gray
-tmux_conf_theme_colour_14="#000000"   # black
-tmux_conf_theme_colour_15="#000000"   # black
+tmux_conf_theme_colour_12="#9E7D8E"   # muted mauve
+tmux_conf_theme_colour_13="#E8D5E0"   # pale pink
+tmux_conf_theme_colour_14="#380C2A"   # burgundy
+tmux_conf_theme_colour_15="#380C2A"   # burgundy
 tmux_conf_theme_colour_16="#ff5252"   # coral red
-tmux_conf_theme_colour_17="#cfd8dc"   # light gray
+tmux_conf_theme_colour_17="#E8D5E0"   # pale pink
 
 # window style
 tmux_conf_theme_window_fg="default"

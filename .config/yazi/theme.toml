@@ -1,111 +1,112 @@
-# yazi 主题 —— Scarlet（暖色 · 红/洋红主导 · 高饱和 · 纯黑底 #000000）
+# yazi 主题 —— Burgundy（暖色 · 红/洋红主导 · 高饱和 · 酒红底 #380C2A）
 # 与 GNOME Terminal / tmux / Vim 全线统一
 # 变更记录:
+#   2026-06-02  Burgundy 主题 (背景从纯黑 #000000 → 酒红 #380C2A)
 #   2026-06-01  Scarlet 主题 (由 One Dark → Gruvbox → Scarlet 最终方案)
 #               文件夹颜色改为蛋黄白 #ffecb3
 
 [app]
-overall = { bg = "#000000" }
+overall = { bg = "#380C2A" }
 
 [mgr]
 cwd            = { fg = "#ff4081", bold = true }
 border_symbol  = "│"
-border_style   = { fg = "#263238" }
+border_style   = { fg = "#2D0822" }
 syntect_theme  = "base16-ocean.dark"
 
 [indicator]
-parent  = { fg = "#263238", bg = "#000000" }
-current = { fg = "#263238", bg = "#000000" }
-preview = { fg = "#263238", bg = "#000000" }
+parent  = { fg = "#2D0822", bg = "#380C2A" }
+current = { fg = "#2D0822", bg = "#380C2A" }
+preview = { fg = "#2D0822", bg = "#380C2A" }
 
 [tabs]
-active   = { fg = "#cfd8dc", bg = "#000000", bold = true }
-inactive = { fg = "#546e7a", bg = "#000000" }
+active   = { fg = "#E8D5E0", bg = "#380C2A", bold = true }
+inactive = { fg = "#9E7D8E", bg = "#380C2A" }
 
 [mode]
-normal_main = { fg = "#000000", bg = "#ff4081", bold = true }
-normal_alt  = { fg = "#ff4081", bg = "#263238" }
-select_main = { fg = "#000000", bg = "#69f0ae", bold = true }
-select_alt  = { fg = "#69f0ae", bg = "#263238" }
-unset_main  = { fg = "#000000", bg = "#ffab40", bold = true }
-unset_alt   = { fg = "#ffab40", bg = "#263238" }
+normal_main = { fg = "#380C2A", bg = "#ff4081", bold = true }
+normal_alt  = { fg = "#ff4081", bg = "#2D0822" }
+select_main = { fg = "#380C2A", bg = "#69f0ae", bold = true }
+select_alt  = { fg = "#69f0ae", bg = "#2D0822" }
+unset_main  = { fg = "#380C2A", bg = "#ffab40", bold = true }
+unset_alt   = { fg = "#ffab40", bg = "#2D0822" }
 
 [status]
-overall         = { fg = "#78909c", bg = "#000000" }
+overall         = { fg = "#9E7D8E", bg = "#380C2A" }
 sep_left        = { open = "", close = "]" }
 sep_right       = { open = "[", close = "" }
 perm_type       = { fg = "#40c4ff" }
 perm_read       = { fg = "#69f0ae" }
 perm_write      = { fg = "#ffab40" }
 perm_exec       = { fg = "#ff5252" }
-perm_sep        = { fg = "#263238" }
-progress_label  = { fg = "#cfd8dc", bold = true }
-progress_normal = { fg = "#000000", bg = "#ff4081" }
-progress_error  = { fg = "#000000", bg = "#ff5252" }
+perm_sep        = { fg = "#2D0822" }
+progress_label  = { fg = "#E8D5E0", bold = true }
+progress_normal = { fg = "#380C2A", bg = "#ff4081" }
+progress_error  = { fg = "#380C2A", bg = "#ff5252" }
 
 [which]
-mask      = { bg = "#263238" }
-cand      = { fg = "#69f0ae", bg = "#263238" }
-rest      = { fg = "#546e7a", bg = "#263238" }
+mask      = { bg = "#2D0822" }
+cand      = { fg = "#69f0ae", bg = "#2D0822" }
+rest      = { fg = "#9E7D8E", bg = "#2D0822" }
 desc      = { fg = "#ff4081" }
 separator = "  "
 
 [confirm]
 border   = { fg = "#ff4081" }
-title    = { fg = "#000000", bg = "#ff4081", bold = true }
-body     = { fg = "#cfd8dc", bg = "#000000" }
-list     = { fg = "#546e7a" }
-btn_yes  = { fg = "#000000", bg = "#69f0ae", bold = true }
-btn_no   = { fg = "#000000", bg = "#ff5252", bold = true }
+title    = { fg = "#380C2A", bg = "#ff4081", bold = true }
+body     = { fg = "#E8D5E0", bg = "#380C2A" }
+list     = { fg = "#9E7D8E" }
+btn_yes  = { fg = "#380C2A", bg = "#69f0ae", bold = true }
+btn_no   = { fg = "#380C2A", bg = "#ff5252", bold = true }
 
 [spot]
 border   = { fg = "#ff4081" }
-title    = { fg = "#000000", bg = "#ff4081", bold = true }
-tbl_col  = { fg = "#cfd8dc", bg = "#263238" }
-tbl_cell = { fg = "#cfd8dc", bg = "#000000" }
+title    = { fg = "#380C2A", bg = "#ff4081", bold = true }
+tbl_col  = { fg = "#E8D5E0", bg = "#2D0822" }
+tbl_cell = { fg = "#E8D5E0", bg = "#380C2A" }
 
 [notify]
-title_info  = { fg = "#000000", bg = "#40c4ff", bold = true }
-title_warn  = { fg = "#000000", bg = "#ffab40", bold = true }
-title_error = { fg = "#000000", bg = "#ff5252", bold = true }
+title_info  = { fg = "#380C2A", bg = "#40c4ff", bold = true }
+title_warn  = { fg = "#380C2A", bg = "#ffab40", bold = true }
+title_error = { fg = "#380C2A", bg = "#ff5252", bold = true }
 
 [pick]
 border   = { fg = "#ff4081" }
 active   = { fg = "#69f0ae", bold = true }
-inactive = { fg = "#546e7a" }
+inactive = { fg = "#9E7D8E" }
 
 [input]
 border   = { fg = "#ff4081" }
-title    = { fg = "#cfd8dc", bg = "#ff4081" }
-value    = { fg = "#cfd8dc" }
-selected = { fg = "#000000", bg = "#ff4081" }
+title    = { fg = "#380C2A", bg = "#ff4081" }
+value    = { fg = "#E8D5E0" }
+selected = { fg = "#380C2A", bg = "#ff4081" }
 
 [cmp]
 border   = { fg = "#ff4081" }
-active   = { fg = "#69f0ae", bg = "#263238", bold = true }
-inactive = { fg = "#cfd8dc", bg = "#000000" }
+active   = { fg = "#69f0ae", bg = "#2D0822", bold = true }
+inactive = { fg = "#E8D5E0", bg = "#380C2A" }
 
 [tasks]
 border  = { fg = "#ff4081" }
-title   = { fg = "#cfd8dc", bg = "#ff4081", bold = true }
-hovered = { fg = "#cfd8dc", bg = "#263238", bold = true }
+title   = { fg = "#380C2A", bg = "#ff4081", bold = true }
+hovered = { fg = "#E8D5E0", bg = "#2D0822", bold = true }
 
 [help]
 on      = { fg = "#ff4081", bold = true }
 run     = { fg = "#69f0ae" }
-desc    = { fg = "#546e7a" }
-hovered = { bg = "#263238" }
-footer  = { fg = "#546e7a", bg = "#000000" }
+desc    = { fg = "#9E7D8E" }
+hovered = { bg = "#2D0822" }
+footer  = { fg = "#9E7D8E", bg = "#380C2A" }
 
 [filetype]
 rules = [
 	{ mime = "image/*", fg = "#ffab40" },
 	{ mime = "video/*", fg = "#ff4081" },
 	{ mime = "audio/*", fg = "#69f0ae" },
-	{ mime = "text/*", fg = "#cfd8dc" },
+	{ mime = "text/*", fg = "#E8D5E0" },
 	{ mime = "application/zip", fg = "#ff4081" },
 	{ mime = "application/gzip", fg = "#ff4081" },
 	{ mime = "application/x-*", fg = "#40c4ff" },
 	{ url = "*/", fg = "#ffecb3", bold = true },
-	{ url = "*", fg = "#cfd8dc" },
+	{ url = "*", fg = "#E8D5E0" },
 ]

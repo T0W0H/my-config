@@ -54,7 +54,7 @@ Complete ROS development workflow:
 | Snippet expand | `Tab` | snipMate snippet trigger |
 | Snippet jump | `Ctrl-j/k` | Next/previous placeholder |
 
-**Theme**: Scarlet (terminal ANSI colors synced with GNOME Terminal / tmux / Yazi).  
+**Theme**: Burgundy (terminal ANSI colors synced with GNOME Terminal / tmux / Yazi).  
 **LSP servers**: clangd-18 (apt) for C++, pyright-langserver (pip) for Python.  
 **Format on save**: autopep8 (Python), clang-format Google style (C++), json.tool (JSON), xmllint (ROS .launch).  
 **Plugins** (in `~/.vim/pack/plugins/start/`): fzf.vim, nerdtree, vim-lsp, vim-polyglot, vim-ros, vim-snippets.  
@@ -70,10 +70,10 @@ Complete ROS development workflow:
 
 ### tmux — `~/.tmux.conf.local`
 
-Oh My Tmux! configuration with Scarlet color palette.  
+Oh My Tmux! configuration with Burgundy color palette.  
 Key settings:
 - `tmux_conf_24b_colour=true` — truecolor support
-- Pane borders / status bar synced to Scarlet theme
+- Pane borders / status bar synced to Burgundy theme
 - `tmux_conf_new_pane_retain_current_path=true` — new panes keep CWD
 
 ### Yazi — `~/.config/yazi/`
@@ -82,7 +82,7 @@ Key settings:
 |------|---------|
 | `yazi.toml` | Opener (vim via `yazi-vim-opener`), previewer rules (code preview for csv/tsv/txt/log/md) |
 | `keymap.toml` | Default keybindings, no custom overrides |
-| `theme.toml` | Scarlet color scheme synced with terminal/tmux/Vim |
+| `theme.toml` | Burgundy color scheme synced with terminal/tmux/Vim |
 
 ### Shell — `~/.zshrc`, `~/.bashrc`
 
@@ -104,7 +104,7 @@ Key settings:
 ### GNOME Terminal — `~/.config/dconf-dump/`
 
 Exported dconf dump of terminal profile configuration.  
-Contains the **Scarlet** palette and profile UUID `8a2af8cc-a024-4ca0-850d-b545e3b48ae1` ("我的最爱").  
+Contains the **Burgundy** palette and profile UUID `8a2af8cc-a024-4ca0-850d-b545e3b48ae1` ("我的最爱").  
 Restore with: `dconf load /org/gnome/terminal/legacy/profiles:/ < gnome-terminal-profiles.conf`
 
 ### Custom Scripts — `~/.local/bin/yazi-vim-opener`
@@ -126,20 +126,20 @@ To restore: `sudo cp ~/.config/dotfiles/locale.conf /etc/default/locale`
 
 ---
 
-## Theme: Scarlet
+## Theme: Burgundy
 
-Warm, red/magenta-dominant palette on pure black `#000000`.
+Warm, red/magenta-dominant palette on deep burgundy `#380C2A`.
 
 | ANSI | Hex | Role |
 |------|-----|------|
-| 0 | `#000000` | Pure black background |
+| 0 | `#380C2A` | Deep burgundy background |
 | 1 | `#ff5252` | Coral red — errors / strings |
 | 2 | `#69f0ae` | Mint green — success / builtins |
 | 3 | `#ffab40` | Amber — warnings / numbers |
 | 4 | `#448aff` | Blue — directory names (restrained) |
 | **5** | **`#ff4081`** | **Hot pink / magenta — THE accent color** |
 | 6 | `#40c4ff` | Light cyan — types / links |
-| 7 | `#cfd8dc` | Light gray — body text |
+| 7 | `#E8D5E0` | Pale pink — body text |
 | 8–15 | bright variants | UI highlights |
 
 The palette is synced across all four layers:
@@ -305,6 +305,6 @@ e25522c Update README stats and commit history
 a8942b3 Add SSH config (GitHub via ssh.github.com:443)
 e0c5bb0 Comprehensive README: full restore guide, theme specs, keybindings, deps, gitignore
 b119c4f Add README and system locale reference
-911bc4f Add Yazi Scarlet configs + dotfiles alias in shellrc
-75b4949 Initial dotfiles — Scarlet theme, ROS dev workflow, locale en_US
+911bc4f Add Yazi Burgundy configs + dotfiles alias in shellrc
+75b4949 Initial dotfiles — Burgundy theme, ROS dev workflow, locale en_US
 ```
