@@ -1,7 +1,7 @@
 # Dotfiles — twh's Development Environment
 
 Managed via bare Git repository at `~/dotfiles.git`.  
-26 tracked files | 11 commits | Last updated 2026-06-03
+26 tracked files | 14 commits | Last updated 2026-06-03
 
 ---
 
@@ -337,12 +337,16 @@ mkdir -p ~/.vim/pack/plugins/start
 ## Commit History
 
 ```
-cced81b fix(vim): clipboard — xclip provider 替代内置剪贴板，修复中文 `"+p` 显示为 \uXXXX 乱码
+d67815d docs: add punctuation toggle, finalize fcitx5 config
+cced81b fix(vim): xclip clipboard provider 替代内置剪贴板
+4779246 docs: update README stats (26 files, 11 commits)
+d7d729b config: add fcitx5 xiaohe shuangpin, replace ibus
+98b3678 fix: 调亮前景色 + zsh-syntax-highlighting/LS_COLORS 适配 Burgundy
 772fe18 theme: 背景从纯黑 #000000 改为酒红 #380C2A (Burgundy)
 bbdfc34 config: set rcsv_max_columns=100 for rainbow_csv
 dea2cc7 refactor: switch CSV syntax to rainbow_csv plugin
 5b4b1b3 docs: update README — CSV syntax, Yazi previewer, 21 files, 8 commits
-72f8ea6 feat: multi-color CSV syntax (dynamic column count, Scarlet palette), Yazi text preview rules
+72f8ea6 feat: multi-color CSV syntax, Yazi text preview rules
 e25522c Update README stats and commit history
 48265e8 Remove yazi custom keybindings
 a8942b3 Add SSH config (GitHub via ssh.github.com:443)

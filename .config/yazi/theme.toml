@@ -1,9 +1,5 @@
 # yazi 主题 —— Burgundy（暖色 · 红/洋红主导 · 高饱和 · 酒红底 #380C2A）
 # 与 GNOME Terminal / tmux / Vim 全线统一
-# 变更记录:
-#   2026-06-02  Burgundy 主题 (背景从纯黑 #000000 → 酒红 #380C2A)
-#   2026-06-01  Scarlet 主题 (由 One Dark → Gruvbox → Scarlet 最终方案)
-#               文件夹颜色改为蛋黄白 #ffecb3
 
 [app]
 overall = { bg = "#380C2A" }
@@ -11,13 +7,13 @@ overall = { bg = "#380C2A" }
 [mgr]
 cwd            = { fg = "#ff4081", bold = true }
 border_symbol  = "│"
-border_style   = { fg = "#2D0822" }
+border_style   = { fg = "#D4A574" }
 syntect_theme  = "base16-ocean.dark"
 
 [indicator]
-parent  = { fg = "#2D0822", bg = "#380C2A" }
-current = { fg = "#2D0822", bg = "#380C2A" }
-preview = { fg = "#2D0822", bg = "#380C2A" }
+parent  = { fg = "#380C2A", bg = "#D4A574" }
+current = { fg = "#380C2A", bg = "#D4A574" }
+preview = { fg = "#1A0D2E", bg = "#40c4ff" }
 
 [tabs]
 active   = { fg = "#F0E4EC", bg = "#380C2A", bold = true }
@@ -25,11 +21,11 @@ inactive = { fg = "#9E7D8E", bg = "#380C2A" }
 
 [mode]
 normal_main = { fg = "#380C2A", bg = "#ff4081", bold = true }
-normal_alt  = { fg = "#ff4081", bg = "#2D0822" }
+normal_alt  = { fg = "#ff4081", bg = "#5A2A44" }
 select_main = { fg = "#380C2A", bg = "#69f0ae", bold = true }
-select_alt  = { fg = "#69f0ae", bg = "#2D0822" }
+select_alt  = { fg = "#69f0ae", bg = "#5A2A44" }
 unset_main  = { fg = "#380C2A", bg = "#ffab40", bold = true }
-unset_alt   = { fg = "#ffab40", bg = "#2D0822" }
+unset_alt   = { fg = "#ffab40", bg = "#5A2A44" }
 
 [status]
 overall         = { fg = "#9E7D8E", bg = "#380C2A" }
@@ -39,15 +35,15 @@ perm_type       = { fg = "#40c4ff" }
 perm_read       = { fg = "#69f0ae" }
 perm_write      = { fg = "#ffab40" }
 perm_exec       = { fg = "#ff5252" }
-perm_sep        = { fg = "#2D0822" }
+perm_sep        = { fg = "#5A2A44" }
 progress_label  = { fg = "#F0E4EC", bold = true }
 progress_normal = { fg = "#380C2A", bg = "#ff4081" }
 progress_error  = { fg = "#380C2A", bg = "#ff5252" }
 
 [which]
-mask      = { bg = "#2D0822" }
-cand      = { fg = "#69f0ae", bg = "#2D0822" }
-rest      = { fg = "#9E7D8E", bg = "#2D0822" }
+mask      = { bg = "#5A2A44" }
+cand      = { fg = "#69f0ae", bg = "#5A2A44" }
+rest      = { fg = "#9E7D8E", bg = "#5A2A44" }
 desc      = { fg = "#ff4081" }
 separator = "  "
 
@@ -62,7 +58,7 @@ btn_no   = { fg = "#380C2A", bg = "#ff5252", bold = true }
 [spot]
 border   = { fg = "#ff4081" }
 title    = { fg = "#380C2A", bg = "#ff4081", bold = true }
-tbl_col  = { fg = "#F0E4EC", bg = "#2D0822" }
+tbl_col  = { fg = "#F0E4EC", bg = "#5A2A44" }
 tbl_cell = { fg = "#F0E4EC", bg = "#380C2A" }
 
 [notify]
@@ -83,19 +79,19 @@ selected = { fg = "#380C2A", bg = "#ff4081" }
 
 [cmp]
 border   = { fg = "#ff4081" }
-active   = { fg = "#69f0ae", bg = "#2D0822", bold = true }
+active   = { fg = "#69f0ae", bg = "#5A2A44", bold = true }
 inactive = { fg = "#F0E4EC", bg = "#380C2A" }
 
 [tasks]
 border  = { fg = "#ff4081" }
 title   = { fg = "#380C2A", bg = "#ff4081", bold = true }
-hovered = { fg = "#F0E4EC", bg = "#2D0822", bold = true }
+hovered = { fg = "#F0E4EC", bg = "#5A2A44", bold = true }
 
 [help]
 on      = { fg = "#ff4081", bold = true }
 run     = { fg = "#69f0ae" }
 desc    = { fg = "#9E7D8E" }
-hovered = { bg = "#2D0822" }
+hovered = { bg = "#5A2A44" }
 footer  = { fg = "#9E7D8E", bg = "#380C2A" }
 
 [filetype]
