@@ -140,9 +140,13 @@ Fcitx5 with Xiaohe (小鹤) double pinyin, replacing ibus.
 | `~/.xinputrc` | `run_im fcitx5` for im-config |
 
 **Usage**:
-- `Ctrl+Space` toggle Chinese/English
-- `Shift` switches temporarily (AltTriggerKeys default)
-- Kimpanel provides dark-themed candidate window in GNOME Shell (needs `Alt+F2` → `r` after login)
+| Key | Action |
+|-----|--------|
+| `Ctrl+Space` | Toggle Chinese/English IM (auto-commit preedit) |
+| `Ctrl+.` | Toggle Chinese/English punctuation (,。 ↔ ,.) |
+| | |
+| Xiaohe (小鹤) double pinyin — engine: `shuangpin` |
+| Kimpanel provides dark-themed candidate window in GNOME Shell (`Alt+F2` → `r` after login) |
 
 **Packages**: `fcitx5 fcitx5-chinese-addons fcitx5-frontend-gtk2 fcitx5-frontend-gtk3 fcitx5-frontend-qt5 fcitx5-module-cloudpinyin`
 
@@ -333,7 +337,7 @@ mkdir -p ~/.vim/pack/plugins/start
 ## Commit History
 
 ```
-5261072 fix(vim): clipboard — xclip provider 替代内置剪贴板，修复中文 `"+p` 显示为 \uXXXX 乱码
+cced81b fix(vim): clipboard — xclip provider 替代内置剪贴板，修复中文 `"+p` 显示为 \uXXXX 乱码
 772fe18 theme: 背景从纯黑 #000000 改为酒红 #380C2A (Burgundy)
 bbdfc34 config: set rcsv_max_columns=100 for rainbow_csv
 dea2cc7 refactor: switch CSV syntax to rainbow_csv plugin
