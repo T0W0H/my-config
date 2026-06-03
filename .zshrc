@@ -79,6 +79,34 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git ros colored-man-pages jsontools zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
 
+# zsh-syntax-highlighting 配色适配 Burgundy 背景 (#380C2A)
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[comment]='fg=#9E7D8E'
+ZSH_HIGHLIGHT_STYLES[arg0]='fg=#69f0ae'
+ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=#ffab40'
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#D4A574'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#D4A574'
+ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument]='fg=#D4A574'
+ZSH_HIGHLIGHT_STYLES[redirection]='fg=#ffab40'
+ZSH_HIGHLIGHT_STYLES[path]='fg=#61AFEF,underline'
+ZSH_HIGHLIGHT_STYLES[globbing]='fg=#61AFEF'
+ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=#61AFEF'
+ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter]='fg=#C77DB0'
+ZSH_HIGHLIGHT_STYLES[process-substitution-delimiter]='fg=#C77DB0'
+ZSH_HIGHLIGHT_STYLES[back-quoted-argument-delimiter]='fg=#C77DB0'
+ZSH_HIGHLIGHT_STYLES[rc-quote]='fg=#61AFEF'
+ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=#61AFEF'
+ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=#61AFEF'
+ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]='fg=#61AFEF'
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#ff5252,bold'
+ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=#69f0ae,underline'
+ZSH_HIGHLIGHT_STYLES[global-alias]='fg=#61AFEF'
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=#69f0ae,underline'
+ZSH_HIGHLIGHT_STYLES[autodirectory]='fg=#69f0ae,underline'
+
+# ls 颜色适配 Burgundy 背景
+export LS_COLORS='di=1;33:ln=1;36:so=1;35:pi=33:ex=1;32:bd=33;01:cd=33;01:su=1;31:sg=1;31:tw=1;34:ow=1;34'
+
 fpath=(~/.zsh/completions $fpath)
 
 source $ZSH/oh-my-zsh.sh
@@ -119,7 +147,7 @@ export EDITOR=vim
 source /opt/ros/noetic/setup.zsh
 source ~/catkin_ws/devel/setup.zsh
 alias sslvpn='sudo /opt/sslvpnclient/secgateaccess'
-alias bw='nano ~/Documents/note.txt'
+alias tt='gnome-terminal'
 
 
 # 自定义命令：一键清理 VPN 残留并快速连接

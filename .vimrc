@@ -25,7 +25,7 @@ hi FoldColumn guibg=#380C2A ctermbg=0
 hi CursorLine guibg=#2D0822 ctermbg=235
 
 " :terminal 内 ANSI 16 色调（与终端/tmux/yazi 统一）
-let g:terminal_ansi_colors = ['#380C2A','#ff5252','#69f0ae','#ffab40','#448aff','#ff4081','#40c4ff','#E8D5E0','#7A6B73','#ff8a80','#b9f6ca','#ffd740','#82b1ff','#ff80ab','#84ffff','#ffffff']
+let g:terminal_ansi_colors = ['#380C2A','#ff5252','#69f0ae','#ffab40','#61AFEF','#ff4081','#40c4ff','#F0E4EC','#7A6B73','#ff8a80','#b9f6ca','#ffd740','#82b1ff','#ff80ab','#84ffff','#ffffff']
 
 " 状态栏始终显示
 set laststatus=2

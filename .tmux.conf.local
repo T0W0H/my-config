@@ -96,17 +96,17 @@ tmux_conf_theme_colour_3="#9E7D8E"    # muted mauve (dim text)
 tmux_conf_theme_colour_4="#ff4081"    # hot pink (active!)
 tmux_conf_theme_colour_5="#ffab40"    # amber (mode/message)
 tmux_conf_theme_colour_6="#380C2A"    # burgundy
-tmux_conf_theme_colour_7="#E8D5E0"    # pale pink (text)
+tmux_conf_theme_colour_7="#F0E4EC"    # warm white (text)
 tmux_conf_theme_colour_8="#380C2A"    # burgundy
 tmux_conf_theme_colour_9="#ffab40"    # amber
 tmux_conf_theme_colour_10="#ff4081"   # hot pink (magenta accent)
 tmux_conf_theme_colour_11="#69f0ae"   # mint green
 tmux_conf_theme_colour_12="#9E7D8E"   # muted mauve
-tmux_conf_theme_colour_13="#E8D5E0"   # pale pink
+tmux_conf_theme_colour_13="#F0E4EC"   # warm white
 tmux_conf_theme_colour_14="#380C2A"   # burgundy
 tmux_conf_theme_colour_15="#380C2A"   # burgundy
 tmux_conf_theme_colour_16="#ff5252"   # coral red
-tmux_conf_theme_colour_17="#E8D5E0"   # pale pink
+tmux_conf_theme_colour_17="#F0E4EC"   # warm white
 
 # window style
 tmux_conf_theme_window_fg="default"

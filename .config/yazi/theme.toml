@@ -20,7 +20,7 @@ current = { fg = "#2D0822", bg = "#380C2A" }
 preview = { fg = "#2D0822", bg = "#380C2A" }
 
 [tabs]
-active   = { fg = "#E8D5E0", bg = "#380C2A", bold = true }
+active   = { fg = "#F0E4EC", bg = "#380C2A", bold = true }
 inactive = { fg = "#9E7D8E", bg = "#380C2A" }
 
 [mode]
@@ -40,7 +40,7 @@ perm_read       = { fg = "#69f0ae" }
 perm_write      = { fg = "#ffab40" }
 perm_exec       = { fg = "#ff5252" }
 perm_sep        = { fg = "#2D0822" }
-progress_label  = { fg = "#E8D5E0", bold = true }
+progress_label  = { fg = "#F0E4EC", bold = true }
 progress_normal = { fg = "#380C2A", bg = "#ff4081" }
 progress_error  = { fg = "#380C2A", bg = "#ff5252" }
 
@@ -54,7 +54,7 @@ separator = "  "
 [confirm]
 border   = { fg = "#ff4081" }
 title    = { fg = "#380C2A", bg = "#ff4081", bold = true }
-body     = { fg = "#E8D5E0", bg = "#380C2A" }
+body     = { fg = "#F0E4EC", bg = "#380C2A" }
 list     = { fg = "#9E7D8E" }
 btn_yes  = { fg = "#380C2A", bg = "#69f0ae", bold = true }
 btn_no   = { fg = "#380C2A", bg = "#ff5252", bold = true }
@@ -62,8 +62,8 @@ btn_no   = { fg = "#380C2A", bg = "#ff5252", bold = true }
 [spot]
 border   = { fg = "#ff4081" }
 title    = { fg = "#380C2A", bg = "#ff4081", bold = true }
-tbl_col  = { fg = "#E8D5E0", bg = "#2D0822" }
-tbl_cell = { fg = "#E8D5E0", bg = "#380C2A" }
+tbl_col  = { fg = "#F0E4EC", bg = "#2D0822" }
+tbl_cell = { fg = "#F0E4EC", bg = "#380C2A" }
 
 [notify]
 title_info  = { fg = "#380C2A", bg = "#40c4ff", bold = true }
@@ -78,18 +78,18 @@ inactive = { fg = "#9E7D8E" }
 [input]
 border   = { fg = "#ff4081" }
 title    = { fg = "#380C2A", bg = "#ff4081" }
-value    = { fg = "#E8D5E0" }
+value    = { fg = "#F0E4EC" }
 selected = { fg = "#380C2A", bg = "#ff4081" }
 
 [cmp]
 border   = { fg = "#ff4081" }
 active   = { fg = "#69f0ae", bg = "#2D0822", bold = true }
-inactive = { fg = "#E8D5E0", bg = "#380C2A" }
+inactive = { fg = "#F0E4EC", bg = "#380C2A" }
 
 [tasks]
 border  = { fg = "#ff4081" }
 title   = { fg = "#380C2A", bg = "#ff4081", bold = true }
-hovered = { fg = "#E8D5E0", bg = "#2D0822", bold = true }
+hovered = { fg = "#F0E4EC", bg = "#2D0822", bold = true }
 
 [help]
 on      = { fg = "#ff4081", bold = true }
@@ -103,10 +103,10 @@ rules = [
 	{ mime = "image/*", fg = "#ffab40" },
 	{ mime = "video/*", fg = "#ff4081" },
 	{ mime = "audio/*", fg = "#69f0ae" },
-	{ mime = "text/*", fg = "#E8D5E0" },
+	{ mime = "text/*", fg = "#F0E4EC" },
 	{ mime = "application/zip", fg = "#ff4081" },
 	{ mime = "application/gzip", fg = "#ff4081" },
 	{ mime = "application/x-*", fg = "#40c4ff" },
 	{ url = "*/", fg = "#ffecb3", bold = true },
-	{ url = "*", fg = "#E8D5E0" },
+	{ url = "*", fg = "#F0E4EC" },
 ]

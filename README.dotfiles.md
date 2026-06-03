@@ -1,7 +1,7 @@
 # Dotfiles — twh's Development Environment
 
 Managed via bare Git repository at `~/dotfiles.git`.  
-21 tracked files | 8 commits | Last updated 2026-06-01
+22 tracked files | 10 commits | Last updated 2026-06-03
 
 ---
 
@@ -91,6 +91,8 @@ Key settings:
 - `dotfiles` alias for managing this repo
 - ROS Noetic sourced automatically
 - `bw` alias → opens `~/Documents/note.txt`
+- `ZSH_HIGHLIGHT_STYLES` — custom syntax highlighting colors adapted to Burgundy background
+- `LS_COLORS` — directory/file color tweaks for better contrast on `#380C2A`
 
 ### Desktop Environment
 
@@ -136,11 +138,18 @@ Warm, red/magenta-dominant palette on deep burgundy `#380C2A`.
 | 1 | `#ff5252` | Coral red — errors / strings |
 | 2 | `#69f0ae` | Mint green — success / builtins |
 | 3 | `#ffab40` | Amber — warnings / numbers |
-| 4 | `#448aff` | Blue — directory names (restrained) |
+| 4 | `#61AFEF` | Blue — directory names (restrained) |
 | **5** | **`#ff4081`** | **Hot pink / magenta — THE accent color** |
 | 6 | `#40c4ff` | Light cyan — types / links |
-| 7 | `#E8D5E0` | Pale pink — body text |
-| 8–15 | bright variants | UI highlights |
+| 7 | `#F0E4EC` | Warm white — body text |
+| 8 | `#7A6B73` | Muted gray — dim text / comments |
+| 9 | `#ff8a80` | Bright coral |
+| 10 | `#b9f6ca` | Bright mint |
+| 11 | `#ffd740` | Bright amber |
+| 12 | `#82b1ff` | Bright blue |
+| 13 | `#ff80ab` | Bright pink |
+| 14 | `#84ffff` | Bright cyan |
+| 15 | `#ffffff` | Pure white |
 
 The palette is synced across all four layers:
 ```
@@ -299,12 +308,16 @@ mkdir -p ~/.vim/pack/plugins/start
 ## Commit History
 
 ```
-72f8ea6 feat: multi-color CSV syntax, Yazi text preview rules
+772fe18 theme: 背景从纯黑 #000000 改为酒红 #380C2A (Burgundy)
+bbdfc34 config: set rcsv_max_columns=100 for rainbow_csv
+dea2cc7 refactor: switch CSV syntax to rainbow_csv plugin
+5b4b1b3 docs: update README — CSV syntax, Yazi previewer, 21 files, 8 commits
+72f8ea6 feat: multi-color CSV syntax (dynamic column count, Scarlet palette), Yazi text preview rules
 e25522c Update README stats and commit history
 48265e8 Remove yazi custom keybindings
 a8942b3 Add SSH config (GitHub via ssh.github.com:443)
 e0c5bb0 Comprehensive README: full restore guide, theme specs, keybindings, deps, gitignore
 b119c4f Add README and system locale reference
-911bc4f Add Yazi Burgundy configs + dotfiles alias in shellrc
-75b4949 Initial dotfiles — Burgundy theme, ROS dev workflow, locale en_US
+911bc4f Add Yazi Scarlet configs + dotfiles alias in shellrc
+75b4949 Initial dotfiles — Scarlet theme, ROS dev workflow, locale en_US
 ```
