@@ -1,7 +1,7 @@
 # Dotfiles — twh's Development Environment
 
 Managed via bare Git repository at `~/dotfiles.git`.  
-22 tracked files | 10 commits | Last updated 2026-06-03
+26 tracked files | 11 commits | Last updated 2026-06-03
 
 ---
 
@@ -120,6 +120,26 @@ else
     exec vim "$@"
 fi
 ```
+
+### Input Method — `~/.config/fcitx5/`
+
+Fcitx5 with Xiaohe (小鹤) double pinyin, replacing ibus.
+
+| File | Purpose |
+|------|---------|
+| `~/.config/fcitx5/profile` | IM group (keyboard-us + shuangpin) |
+| `~/.config/fcitx5/config` | Global hotkeys, behavior, disabled addons (spell) |
+| `~/.config/fcitx5/conf/pinyin.conf` | Pinyin engine config — Xiaohe shuangpin, all fuzzy disabled |
+| `~/.config/fcitx5/conf/classicui.conf` | Classic UI theme settings (backup, kimpanel is primary) |
+| `~/.profile` | IM env vars: `GTK_IM_MODULE=fcitx`, `QT_IM_MODULE=fcitx` |
+| `~/.xinputrc` | `run_im fcitx5` for im-config |
+
+**Usage**:
+- `Ctrl+Space` toggle Chinese/English
+- `Shift` switches temporarily (AltTriggerKeys default)
+- Kimpanel provides dark-themed candidate window in GNOME Shell (needs `Alt+F2` → `r` after login)
+
+**Packages**: `fcitx5 fcitx5-chinese-addons fcitx5-frontend-gtk2 fcitx5-frontend-gtk3 fcitx5-frontend-qt5 fcitx5-module-cloudpinyin`
 
 ### System Reference — `~/.config/dotfiles/locale.conf`
 
