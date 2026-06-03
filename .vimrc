@@ -39,6 +39,37 @@ set incsearch
 set ignorecase
 set smartcase
 
+" 系统剪切板联动 (xclip provider 替代内置剪贴板，修复 UTF-8 乱码)
+set clipboard=unnamedplus
+
+function! s:ClipAvailable()
+    return executable('xclip')
+endfunction
+
+function! s:ClipCopy(reg, type, lines)
+    let l:sel = a:reg == '+' ? 'clipboard' : 'primary'
+    call system('xclip -selection ' . l:sel, join(a:lines, "\n"))
+endfunction
+
+function! s:ClipPaste(reg)
+    let l:sel = a:reg == '+' ? 'clipboard' : 'primary'
+    let l:output = systemlist('xclip -selection ' . l:sel . ' -o')
+    return ['', l:output]
+endfunction
+
+let v:clipproviders['xclip'] = {
+    \ 'available': function('s:ClipAvailable'),
+    \ 'copy': {
+    \     '+': function('s:ClipCopy'),
+    \     '*': function('s:ClipCopy')
+    \ },
+    \ 'paste': {
+    \     '+': function('s:ClipPaste'),
+    \     '*': function('s:ClipPaste')
+    \ }
+    \ }
+set clipmethod^=xclip
+
 " 窗口分割方向
 set splitbelow
 set splitright

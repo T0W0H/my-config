@@ -29,7 +29,12 @@ dconf load /org/gnome/terminal/legacy/profiles:/ < ~/.config/dconf-dump/gnome-te
 
 ### Vim — `~/.vimrc`
 
-Complete ROS development workflow:
+Complete ROS development workflow.
+
+**Clipboard**: Uses xclip provider (`v:clipproviders` + `clipmethod`) instead of Vim's
+built-in clipboard. `p`/`y` mapped to system clipboard (`unnamedplus`).  This
+bypasses a bug in Vim 9.2's built-in clipboard provider that encodes non-ASCII
+(Chinese) as `\uXXXX` escape sequences instead of real UTF-8.
 
 | Feature | Key | Details |
 |---------|-----|---------|
@@ -328,6 +333,7 @@ mkdir -p ~/.vim/pack/plugins/start
 ## Commit History
 
 ```
+5261072 fix(vim): clipboard — xclip provider 替代内置剪贴板，修复中文 `"+p` 显示为 \uXXXX 乱码
 772fe18 theme: 背景从纯黑 #000000 改为酒红 #380C2A (Burgundy)
 bbdfc34 config: set rcsv_max_columns=100 for rainbow_csv
 dea2cc7 refactor: switch CSV syntax to rainbow_csv plugin
