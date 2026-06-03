@@ -170,7 +170,7 @@ fi) \[\033[35m\]\$\[\033[00m\] "
 
 source /opt/ros/noetic/setup.bash
 source ~/catkin_ws/devel/setup.bash
-alias bw='vim ~/Documents/note.txt'
+alias tt='gnome-terminal'
 alias sslvpn='sudo /opt/sslvpnclient/secgateaccess'
 # 自定义命令：一键清理 VPN 残留并快速连接
 xdl() {
@@ -196,3 +196,9 @@ PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
 
 # dotfiles bare git repo alias
 alias dotfiles="git --git-dir=\$HOME/dotfiles.git --work-tree=\$HOME"
+
+
+
+# >>> fishros scripts >>>
+export PATH=$PATH:/home/twh/.fishros/bin/ 
+# <<< fishros scripts <<<
